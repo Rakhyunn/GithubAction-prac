@@ -44,7 +44,6 @@ jobs:
           cat <<EOF > src/private.html
           $PRIVATE_HTML
           EOF
-      - uses: actions/checkout@v4
       - name: Docker Buildx 설치
         uses: docker/setup-buildx-action@v2
       - name: 레지스트리 로그인
